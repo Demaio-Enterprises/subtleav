@@ -15,9 +15,11 @@ export default function Register() {
       </Head>
       <AuthLayout>
         <div className="flex flex-col">
+          <div className='flex justify-center'>
           <Link href="/" aria-label="Home">
             <SvgSubtleAvLogo className="h-10 w-auto" />
           </Link>
+          </div>
           <div className="mt-20">
             <h2 className="text-lg font-semibold text-gray-900">
               Get A Quote
@@ -78,10 +80,10 @@ export default function Register() {
             id="referral_source"
             name="referral_source"
           >
-            <option>AltaVista search</option>
-            <option>Super Bowl commercial</option>
-            <option>Our route 34 city bus ad</option>
-            <option>The “Never Use This” podcast</option>
+            <option>Google</option>
+            <option>Instagram</option>
+            <option>Twitter</option>
+            <option>Word of Mouth</option>
           </SelectField>
           <div className="col-span-full">
             <Button
