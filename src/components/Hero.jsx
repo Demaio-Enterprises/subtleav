@@ -29,7 +29,7 @@ export function Hero() {
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
         {/* Most bookkeeping software is accurate, but hard to use. We make the
         opposite trade-off, and hope you don’t get audited. */}
-        Most audiovisual companies can just roll out speakers and lights. We make sure to enhance the planners decor and the venu's value.
+        Most audiovisual companies can just roll out speakers and lights. We make sure to enhance the planners decor and the venue's value.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         {/* <Button href="/register">Get 6 months free</Button>
