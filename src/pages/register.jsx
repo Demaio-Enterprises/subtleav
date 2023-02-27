@@ -5,6 +5,7 @@ import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
 import { SelectField, TextField } from '@/components/Fields'
 import { Logo } from '@/components/Logo'
+import SvgSubtleAvLogo from '@/components/Subtle_AV_Logo'
 
 export default function Register() {
   return (
@@ -15,7 +16,7 @@ export default function Register() {
       <AuthLayout>
         <div className="flex flex-col">
           <Link href="/" aria-label="Home">
-            <Logo className="h-10 w-auto" />
+            <SvgSubtleAvLogo className="h-10 w-auto" />
           </Link>
           <div className="mt-20">
             <h2 className="text-lg font-semibold text-gray-900">
@@ -90,7 +91,7 @@ export default function Register() {
               className="w-full"
             >
               <span>
-                Sign up <span aria-hidden="true">&rarr;</span>
+                Get Quote <span aria-hidden="true">&rarr;</span>
               </span>
             </Button>
           </div>
