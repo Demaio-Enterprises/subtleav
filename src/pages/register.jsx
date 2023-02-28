@@ -74,7 +74,7 @@ export default function Register() {
             autoComplete="new-password"
             required
           />
-          <SelectField
+          {/* <SelectField
             className="col-span-full"
             label="How did you hear about us?"
             id="referral_source"
@@ -84,7 +84,7 @@ export default function Register() {
             <option>Instagram</option>
             <option>Twitter</option>
             <option>Word of Mouth</option>
-          </SelectField>
+          </SelectField> */}
           <div className="col-span-full">
             <Button
               type="submit"
