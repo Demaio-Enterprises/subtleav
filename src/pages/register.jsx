@@ -66,12 +66,11 @@ export default function Register() {
             required
           />
           <TextField
-            className="col-span-full"
-            label="Password"
-            id="password"
-            name="password"
-            type="password"
-            autoComplete="new-password"
+            label="Phone number"
+            id="phone_number"
+            name="phone_number"
+            type="phone number"
+            autoComplete="phone number"
             required
           />
           {/* <SelectField
