@@ -31,7 +31,7 @@ export function Hero() {
         zIndex: -1,
       }}
       >
-       <source src="/herobackground.mp4" type="video/mp4"/> 
+       <source src="https://s3.us-east-2.amazonaws.com/subtleav.com/mp4/herobackground.mp4" type="video/mp4"/> 
       </video>
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
         Subtle{' '}
