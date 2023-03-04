@@ -92,9 +92,9 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="py-10">
+    <header className="top-0 w-full bg-white shadow-lg z-50 m-0 p-1">
       <Container>
-        <nav className="relative z-50 flex justify-between">
+        <nav className="relative flex justify-start">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
               <SvgSubtleAvLogo className="h-auto w-auto" />
@@ -109,11 +109,6 @@ export function Header() {
             <div className="hidden md:block">
               {/* <NavLink href="/login">Sign in</NavLink> */}
             </div>
-            {/* <Button href="/register" color="blue">
-              <span>
-                Get started <span className="hidden lg:inline">today</span>
-              </span>
-            </Button> */}
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
             </div>

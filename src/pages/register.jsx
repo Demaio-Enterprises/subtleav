@@ -6,6 +6,8 @@ import { Button } from '@/components/Button'
 import { SelectField, TextField } from '@/components/Fields'
 import { Logo } from '@/components/Logo'
 import SvgSubtleAvLogo from '@/components/Subtle_AV_Logo'
+import { Footer } from '@/components/Footer'
+import { Header } from '@/components/Header'
 
 export default function Register() {
   return (
@@ -13,27 +15,18 @@ export default function Register() {
       <Head>
         <title>Quote - Subtle AV</title>
       </Head>
+      <Header/>
       <AuthLayout>
         <div className="flex flex-col">
           <div className='flex justify-center'>
           <Link href="/" aria-label="Home">
-            <SvgSubtleAvLogo className="h-10 w-auto" />
+            <SvgSubtleAvLogo className="w-40 h-40" />
           </Link>
           </div>
-          <div className="mt-20">
+          <div className="mt-20 flex justify-center">
             <h2 className="text-lg font-semibold text-gray-900">
               Get A Quote
             </h2>
-            {/* <p className="mt-2 text-sm text-gray-700">
-              Already a client?{' '}
-              <Link
-                href="/login"
-                className="font-medium text-blue-600 hover:underline"
-              >
-                Sign in
-              </Link>{' '}
-              to your account.
-            </p> */}
           </div>
         </div>
         <form
@@ -73,17 +66,16 @@ export default function Register() {
             autoComplete="phone number"
             required
           />
-          {/* <SelectField
-            className="col-span-full"
-            label="How did you hear about us?"
-            id="referral_source"
-            name="referral_source"
-          >
-            <option>Google</option>
-            <option>Instagram</option>
-            <option>Twitter</option>
-            <option>Word of Mouth</option>
-          </SelectField> */}
+          
+          <div className='col-span-full'>
+              <label for="comment" class="block text-sm font-medium text-gray-700">Enter Event Details</label>
+            <div class="mt-1">
+              <textarea rows="4" name="comment" id="comment" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"></textarea>
+            </div>
+          </div>
+          <div className='text-xs italic max-w-full'>
+          We never share your information with anyone (not even for money)
+          </div>
           <div className="col-span-full">
             <Button
               type="submit"

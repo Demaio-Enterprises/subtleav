@@ -5,35 +5,35 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import fundraiser from '@/images/screenshots/fundraiser.jpg'
+import wedding from '@/images/screenshots/wedding2.JPG'
+import musicVenue from '@/images/screenshots/musicVenue.jpg'
+import corporateEvent from '@/images/screenshots/corporateEvent.JPG'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Weddings',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
+      "",
+    image: wedding,
   },
   {
-    title: 'Claim expenses',
+    title: 'Corporate Events',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+      "",
+    image: corporateEvent,
   },
   {
-    title: 'VAT handling',
+    title: 'Fundraisers',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
+      "",
+    image: fundraiser,
   },
   {
-    title: 'Reporting',
+    title: 'Music Venues',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
+      '',
+    image: musicVenue,
   },
 ]
 
@@ -72,11 +72,10 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            Types of events we service
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            make a lasting impression 
           </p>
         </div>
         <Tab.Group

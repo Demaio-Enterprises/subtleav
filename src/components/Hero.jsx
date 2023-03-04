@@ -8,10 +8,31 @@ import logoStatamic from '@/images/logos/statamic.svg'
 import logoStaticKit from '@/images/logos/statickit.svg'
 import logoTransistor from '@/images/logos/transistor.svg'
 import logoTuple from '@/images/logos/tuple.svg'
+import { useRef } from 'react'
 
 export function Hero() {
+  const videoRef = useRef(null);
   return (
-    <Container className="pt-20 pb-16 text-center lg:pt-32">
+    <Container className="pt-20 pb-16 text-center lg:pt-32"
+    style={{ position: 'relative' }}
+    >
+      <video
+      ref={videoRef}
+      autoPlay
+      loop
+      muted
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        height: '100%',
+        width: '100vw',
+        objectFit: 'cover',
+        zIndex: -1,
+      }}
+      >
+       <source src="/herobackground.mp4" type="video/mp4"/> 
+      </video>
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
         Subtle{' '}
         <span className="relative whitespace-nowrap text-blue-600">
@@ -26,7 +47,7 @@ export function Hero() {
           <span className="relative">AV</span>
         </span>{' '}
       </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+      <p className="mx-auto mt-6 max-w-xs text-lg tracking-tight text-white bg-black opacity-80">
         {/* Most bookkeeping software is accurate, but hard to use. We make the
         opposite trade-off, and hope you don’t get audited. */}
         Subtle Installation. Brilliant Inspiration.
@@ -45,6 +66,9 @@ export function Hero() {
           </svg>
           <span className="ml-3">Watch video</span>
         </Button> */}
+        <Button href="/quote" color="blue" className="mt-10">
+            Get Quote
+          </Button>
       </div>
       <div className="mt-36 lg:mt-44">
         <p className="font-display text-base text-slate-900">
@@ -79,7 +103,7 @@ export function Hero() {
               </ul>
             </li>
           ))}
-        </ul> */}
+        </ul>  */}
       </div>
     </Container>
   )

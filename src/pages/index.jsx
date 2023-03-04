@@ -9,6 +9,7 @@ import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
+import ImageSlider, { ImgCarousel } from '@/components/Carousel'
 
 export default function Home() {
   return (
@@ -17,17 +18,17 @@ export default function Home() {
         <title>Subtle AV</title>
         <meta
           name="description"
-          content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
+          content="Subtle Installation. Brilliant Inspiration"
         />
       </Head>
       <Header />
       <main>
         <Hero />
-        {/* <PrimaryFeatures /> */}
+        <PrimaryFeatures />
         {/* <SecondaryFeatures /> */}
-        <CallToAction />
+        {/* <CallToAction /> */}
+        <ImageSlider/>
         {/* <Testimonials /> */}
-        {/* <Pricing /> */}
         {/* <Faqs /> */}
       </main>
       <Footer />
