@@ -3,16 +3,22 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     scrollRestoration: true,
+    standalone: true,
+    outputFiles: true,
   },
 }
 
 module.exports = {
-  nextConfig,
+  ...nextConfig,
   images: {
     domains: ['s3.us-east-2.amazonaws.com'],
   },
-  experimental: {
-    outputFileTracing: true,
-    standalone: true,
+  webpack(config) {
+    // Modify the existing webpack config here
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    })
+    return config
   },
 }
