@@ -100,9 +100,9 @@ export function Header() {
               <SvgSubtleAvLogo className="h-auto w-auto" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#features">Gallery</NavLink>
-              <NavLink href="#testimonials">About</NavLink>
-              <NavLink href="#pricing">Contact</NavLink>
+              <NavLink href="#gallery">Gallery</NavLink>
+              <NavLink href="#about">About</NavLink>
+              <NavLink href="/quote">Contact</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
