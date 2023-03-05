@@ -17,7 +17,7 @@ export function Hero() {
     style={{ position: 'relative' }}
     >
   
-        <div className='bg-black w-full' style={{width: '100vw'}}>
+        <div className='bg-black w-full'>
         <video
           ref={videoRef}
           autoPlay

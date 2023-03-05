@@ -48,7 +48,7 @@ function MobileNavigation() {
   return (
     <Popover>
       <Popover.Button
-        className="relative z-10 flex h-8 w-8 items-center justify-center [&:not(:focus-visible)]:focus:outline-none"
+        className="relative z-50 flex h-8 w-8 items-center justify-center [&:not(:focus-visible)]:focus:outline-none"
         aria-label="Toggle Navigation"
       >
         {({ open }) => <MobileNavIcon open={open} />}
@@ -76,7 +76,7 @@ function MobileNavigation() {
         >
           <Popover.Panel
             as="div"
-            className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
+            className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 z-50"
           >
             <MobileNavLink href="#features">Gallery</MobileNavLink>
             <MobileNavLink href="#testimonials">About</MobileNavLink>
