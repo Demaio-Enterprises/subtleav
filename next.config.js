@@ -3,18 +3,23 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     scrollRestoration: true,
+    outputFiles: true,
   },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.output.chunkFilename = 'static/chunks/[name].[fullhash].js';
+    }
+    return config;
+  },
+  outputDirectory: '/subtleav/dist/standalone',
 }
 
 module.exports = {
-  ...nextConfig,
+  nextConfig,
   images: {
     domains: ['s3.us-east-2.amazonaws.com'],
   },
   experimental: {
     outputFileTracing: true,
-  },
-  env: {
-    NEXT_PRIVATE_STANDALONE: 'true',
   },
 }
