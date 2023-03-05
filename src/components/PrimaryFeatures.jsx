@@ -5,35 +5,31 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import fundraiser from '@/images/screenshots/fundraiser.png'
-import wedding from '@/images/screenshots/wedding.png'
-import musicVenue from '@/images/screenshots/musicVenue.png'
-import corporateEvent from '@/images/screenshots/corporateEvent.png'
 
 const features = [
   {
     title: 'Weddings',
     description:
       "",
-    image: wedding,
+    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/png/wedding.png',
   },
   {
     title: 'Corporate Events',
     description:
       "",
-    image: corporateEvent,
+    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/png/corporateEvent.png',
   },
   {
     title: 'Fundraisers',
     description:
       "",
-    image: fundraiser,
+    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/png/fundraiser.png',
   },
   {
     title: 'Music Venues',
     description:
       '',
-    image: musicVenue,
+    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/png/musicVenue.png',
   },
 ]
 

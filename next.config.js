@@ -6,4 +6,9 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+module.exports = {
+  nextConfig,
+  images: {
+    domains: ['s3.us-east-2.amazonaws.com'],
+  },
+}
