@@ -1,15 +1,15 @@
 import Head from 'next/head'
 
-import { CallToAction } from '@/components/CallToAction'
-import { Faqs } from '@/components/Faqs'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
-import { Hero } from '@/components/Hero'
-import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { Testimonials } from '@/components/Testimonials'
-import ImageSlider, { ImgCarousel } from '@/components/Carousel'
+// import { CallToAction } from '@/components/CallToAction'
+// import { Faqs } from '@/components/Faqs'
+import { Footer } from '../components/Footer.jsx'
+import { Header } from '../components/Header'
+import { Hero } from '../components/Hero'
+// import { Pricing } from '@/components/Pricing'
+import { PrimaryFeatures } from '../components/PrimaryFeatures'
+// import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+// import { Testimonials } from '@/components/Testimonials'
+// import ImageSlider from 'src/components/Carousel'
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
         <PrimaryFeatures />
         {/* <SecondaryFeatures /> */}
         {/* <CallToAction /> */}
-        <ImageSlider/>
+        {/* <ImageSlider/> */}
         {/* <Testimonials /> */}
         {/* <Faqs /> */}
       </main>

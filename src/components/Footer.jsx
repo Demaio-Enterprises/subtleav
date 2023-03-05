@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
-import { NavLink } from '@/components/NavLink'
-import SvgSubtleAvLogo from './Subtle_AV_Logo'
+import { Container } from '../components/Container'
+// import { Logo } from '@/components/Logo'
+import { NavLink } from '../components/NavLink'
+import SvgSubtleAvLogo from '../components/Subtle_AV_Logo'
 
 export function Footer() {
   return (
