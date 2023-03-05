@@ -15,6 +15,7 @@ const nextConfig = {
 }
 
 module.exports = {
+  output: 'standalone',
   nextConfig,
   images: {
     domains: ['s3.us-east-2.amazonaws.com'],
