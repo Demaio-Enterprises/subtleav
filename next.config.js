@@ -11,7 +11,7 @@ const nextConfig = {
     }
     return config;
   },
-  outputDirectory: '/subtleav/dist/standalone',
+  outputDirectory: '/subtleav/dist/',
 }
 
 module.exports = {
