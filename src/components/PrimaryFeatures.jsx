@@ -68,10 +68,10 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center sm:text-center xs:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl flex justify-center">
-            Types of events we service
+            Events We Service
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100 flex justify-center">
-            make a lasting impression 
+            {/* make a lasting impression  */}
           </p>
         </div>
         <Tab.Group
