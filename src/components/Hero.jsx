@@ -55,8 +55,8 @@ export function Hero() {
         Subtle Installation. Brilliant Inspiration.
       </p>
       <div className="mt-10 flex justify-center gap-x-6 relative">
-        <Button href="/quote" color="blue" className="mt-10">
-            Get Quote
+        <Button href="mailto:sibleym@subtleav.com" color="blue" className="mt-10">
+            Email Us
           </Button>
       </div>
       <div className="mt-36 lg:mt-44">
