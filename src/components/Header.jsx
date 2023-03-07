@@ -80,7 +80,7 @@ function MobileNavigation() {
           >
             <MobileNavLink href="#features">Gallery</MobileNavLink>
             <MobileNavLink href="#testimonials">About</MobileNavLink>
-            <MobileNavLink href="#pricing">Contact</MobileNavLink>
+            <MobileNavLink href="mailto:sibleym@subtleav.com">Contact</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
             {/* <MobileNavLink href="/login">Sign in</MobileNavLink> */}
           </Popover.Panel>
