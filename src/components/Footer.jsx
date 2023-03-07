@@ -15,7 +15,7 @@ export function Footer() {
           </div>
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="#features">Gallery</NavLink>
+              <NavLink href="#services">Gallery</NavLink>
               <NavLink href="#testimonials">About</NavLink>
               <NavLink href="mailto:sibleym@subtleav.com">Contact</NavLink>
             </div>
