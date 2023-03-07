@@ -8,16 +8,16 @@ import backgroundImage from '../images/background-features.jpg'
 
 const features = [
   {
-    title: 'Weddings',
-    description:
-      "",
-    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/png/wedding.png',
-  },
-  {
     title: 'Corporate Events',
     description:
       "",
     image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/png/corporateEvent.png',
+  },
+  {
+    title: 'Weddings',
+    description:
+      "",
+    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/png/wedding.png',
   },
   {
     title: 'Fundraisers',
