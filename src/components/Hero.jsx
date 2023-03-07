@@ -14,7 +14,7 @@ export function Hero() {
   const videoRef = useRef(null);
   return (
     <Container className="pt-20 pb-16 text-center lg:pt-32 relative">
-        <div className='absolute inset-0 bg-black bg-opacity-20 text-opacity-100'>
+        <div className='absolute inset-0 bg-black bg-opacity-50 text-opacity-100'>
           <video
             ref={videoRef}
             autoPlay
@@ -34,7 +34,7 @@ export function Hero() {
       </video>
       </div>
 
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-400 sm:text-7xl">
+      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-400 sm:text-7xl relative">
         Subtle{' '}
         <span className="relative whitespace-nowrap text-blue-600">
           <svg
@@ -48,12 +48,12 @@ export function Hero() {
           <span className="relative">AV</span>
         </span>{' '}
       </h1>
-      <p className="mx-auto mt-6 max-w-xs text-lg tracking-tight text-white text-bold text-opacity-100">
+      <p className="mx-auto mt-6 max-w-xs text-lg tracking-tight text-white text-bold text-opacity-100 relative">
         {/* Most bookkeeping software is accurate, but hard to use. We make the
         opposite trade-off, and hope you don’t get audited. */}
         Subtle Installation. Brilliant Inspiration.
       </p>
-      <div className="mt-10 flex justify-center gap-x-6">
+      <div className="mt-10 flex justify-center gap-x-6 relative">
         <Button href="/quote" color="blue" className="mt-10">
             Get Quote
           </Button>
