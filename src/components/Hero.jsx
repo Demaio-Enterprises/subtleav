@@ -20,6 +20,7 @@ export function Hero() {
             autoPlay
             loop
             muted
+            playsInline
             style={{
               position: 'absolute',
               top: 0,
