@@ -94,16 +94,14 @@ export function Header() {
   return (
     <header className="top-0 w-full bg-white shadow-lg z-50 m-0 p-1">
       <Container>
-        <nav className="relative flex justify-start">
-          <div className="flex items-center md:gap-x-12">
-            <Link href="#" aria-label="Home">
-              <SvgSubtleAvLogo className="h-auto w-auto" />
-            </Link>
-            <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="mailto:sibleym@subtleav.com">Contact</NavLink>
-              <NavLink href="#services">Gallery</NavLink>
-              <NavLink href="#about">About</NavLink>
-            </div>
+        <nav className="relative flex justify-between items-center w-full">
+          <Link href="#" aria-label="Home">
+            <SvgSubtleAvLogo className="h-auto w-auto" />
+          </Link>
+          <div className="relative hidden md:flex md:gap-x-6 justify-self-start">
+            <NavLink href="mailto:sibleym@subtleav.com">Contact</NavLink>
+            <NavLink href="#services">Gallery</NavLink>
+            <NavLink href="#about">About</NavLink>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
@@ -116,5 +114,6 @@ export function Header() {
         </nav>
       </Container>
     </header>
-  )
+  );
 }
+
