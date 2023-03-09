@@ -2,18 +2,13 @@ import Image from 'next/image'
 
 import { Button } from '../components/Button'
 import { Container } from '../components/Container'
-// import logoLaravel from '@/images/logos/laravel.svg'
-// import logoMirage from '@/images/logos/mirage.svg'
-// import logoStatamic from '@/images/logos/statamic.svg'
-// import logoStaticKit from '@/images/logos/statickit.svg'
-// import logoTransistor from '@/images/logos/transistor.svg'
-// import logoTuple from '@/images/logos/tuple.svg'
 import { useRef } from 'react'
+
 
 export function Hero() {
   const videoRef = useRef(null);
   return (
-    <Container className="pt-20 pb-16 text-center lg:pt-32 relative">
+    <Container className="pt-20 pb-16 text-center lg:pt-20 relative">
         <div className='absolute inset-0 bg-black bg-opacity-50 text-opacity-100'>
           <video
             ref={videoRef}
@@ -23,11 +18,14 @@ export function Hero() {
             playsInline
             style={{
               position: 'absolute',
-              top: 0,
+              top: '50%',
               left: 0,
-              height: '100%',
+              transform: 'translateY(-50%)',
+              minHeight: '100%',
+              height: 'auto',
               width: '100vw',
               objectFit: 'cover',
+              objectPosition: 'center',
               zIndex: -1,
           }}
         >
@@ -50,8 +48,6 @@ export function Hero() {
         </span>{' '}
       </h1>
       <p className="mx-auto mt-6 max-w-xs text-lg tracking-tight text-white text-bold text-opacity-100 relative">
-        {/* Most bookkeeping software is accurate, but hard to use. We make the
-        opposite trade-off, and hope you don’t get audited. */}
         Subtle Installation. Brilliant Inspiration.
       </p>
       <div className="mt-10 flex justify-center gap-x-6 relative">
@@ -63,36 +59,6 @@ export function Hero() {
         <p className="font-display text-base text-slate-900">
           {/* Trusted by these six companies so far */}
         </p>
-        {/* <ul
-          role="list"
-          className="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0"
-        >
-          {[
-            [
-              { name: 'Transistor', logo: logoTransistor },
-              { name: 'Tuple', logo: logoTuple },
-              { name: 'StaticKit', logo: logoStaticKit },
-            ],
-            [
-              { name: 'Mirage', logo: logoMirage },
-              { name: 'Laravel', logo: logoLaravel },
-              { name: 'Statamic', logo: logoStatamic },
-            ],
-          ].map((group, groupIndex) => (
-            <li key={groupIndex}>
-              <ul
-                role="list"
-                className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
-              >
-                {group.map((company) => (
-                  <li key={company.name} className="flex">
-                    <Image src={company.logo} alt={company.name} unoptimized />
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>  */}
       </div>
     </Container>
   )
