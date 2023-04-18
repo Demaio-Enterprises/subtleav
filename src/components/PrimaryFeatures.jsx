@@ -11,25 +11,25 @@ const features = [
     title: 'Corporate Events',
     description:
       "",
-    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/png/corporateEvent.png',
+    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/edited_event_pics/IMG_5940.webp',
   },
   {
     title: 'Weddings',
     description:
       "",
-    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/png/wedding.png',
+    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/edited_event_pics/IMG_5920.webp',
   },
   {
     title: 'Fundraisers',
     description:
       "",
-    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/png/fundraiser.png',
+    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/edited_event_pics/IMG_0096.webp',
   },
   {
     title: 'Music Venues',
     description:
       '',
-    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/png/musicVenue.png',
+    image: 'https://s3.us-east-2.amazonaws.com/subtleav.com/edited_event_pics/IMG_0341.webp',
   },
 ]
 
@@ -135,7 +135,6 @@ export function PrimaryFeatures() {
                        alt={feature.title}
                        width={1024}
                        height={768}
-                       priority
                      />
                    </div>
                  </Tab.Panel>
